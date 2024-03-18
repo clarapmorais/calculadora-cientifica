@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <input class="input" type="text" id="input" readonly>
+        <button class="button clear" onclick="clearInput()">C</button>
+        <button class="button function" onclick="appendInput('Math.sqrt(')">√</button>
+        <button class="button function" onclick="appendInput('Math.pow(')">x^y</button>
+        <button class="button operator" onclick="appendInput('/')">÷</button>
+        <button class="button" onclick="appendInput('7')">7</button>
+        <button class="button" onclick="appendInput('8')">8</button>
+        <button class="button" onclick="appendInput('9')">9</button>
+        <button class="button operator" onclick="appendInput('*')">x</button>
+        <button class="button" onclick="appendInput('4')">4</button>
+        <button class="button" onclick="appendInput('5')">5</button>
+        <button class="button" onclick="appendInput('6')">6</button>
+        <button class="button operator" onclick="appendInput('-')">-</button>
+        <button class="button" onclick="appendInput('1')">1</button>
+        <button class="button" onclick="appendInput('2')">2</button>
+        <button class="button" onclick="appendInput('3')">3</button>
+        <button class="button operator" onclick="appendInput('+')">+</button>
+        <button class="button" onclick="appendInput('0')">0</button>
+        <button class="button" onclick="appendInput('.')">.</button>
+        <button class="button equal" onclick="calculate()">=</button>
+        <button class="button" onclick="appendInput('(')">(</button>
+        <button class="button" onclick="appendInput(')')">)</button>
+        <button class="button function" onclick="appendInput('Math.sin(')">sin</button>
+        <button class="button function" onclick="appendInput('Math.cos(')">cos</button>
+        <button class="button function" onclick="appendInput('Math.tan(')">tan</button>
+        <button class="button function" onclick="appendInput('Math.log10(')">log</button>
+        <button class="button function" onclick="appendInput('Math.log(')">ln</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
